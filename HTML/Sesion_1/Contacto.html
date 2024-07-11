@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es-cl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <center>
+        <h1>Formulario de Contacto</h1>
+    </center>
+    
+    <hr>
+    <center>
+    <form action="index.html" method="get">
+    <h3>Formulario para postulación a becas</h3>
+    <table border="1">
+        
+        <tr>
+            <td><label for="">Ingresa tus nombres</label></td>
+            <td><input type="text" placeholder="Nombres"></td>
+        </tr>
+
+        <tr>
+            <td><label for="">Ingresa tus apellidos</label></td>
+            <td><input type="text" placeholder="Apellidos"></td>
+        </tr>
+
+        <tr>
+            <td><label for="">Ingresa tu fecha de nacimiento</label></td>
+            <td><input type="date"></td>
+        </tr>
+
+        <tr>
+            <td><label for="">Ingresa tu email</label></td>
+            <td><input type="email" placeholder="email@dominio.com"></td>
+        </tr>
+
+       
+
+        <tr>
+            <td><label for="">Numero de contacto</label></td>
+            <td><input type="number" placeholder="Numero celular"></td>
+        </tr>
+
+        <tr>
+            <td><label for="region">Ingresa tu Region</label></td>
+            <td><select name="region" required>
+                <option value="">Seleccione una región</option>
+                <option value="arica_y_parinacota">Arica y Parinacota</option>
+                <option value="tarapaca">Tarapacá</option>
+                <option value="antofagasta">Antofagasta</option>
+                <option value="atacama">Atacama</option>
+                <option value="coquimbo">Coquimbo</option>
+                <option value="valparaiso">Valparaíso</option>
+                <option value="metropolitana">Metropolitana de Santiago</option>
+                <option value="ohiggins">Libertador General Bernardo O'Higgins</option>
+                <option value="maule">Maule</option>
+                <option value="nuble">Ñuble</option>
+                <option value="biobio">Biobío</option>
+                <option value="araucania">La Araucanía</option>
+                <option value="rios">Los Ríos</option>
+                <option value="lagos">Los Lagos</option>
+                <option value="aysen">Aysén del General Carlos Ibáñez del Campo</option>
+                <option value="magallanes">Magallanes y de la Antártica Chilena</option>
+            </select></td>
+        </tr>
+
+        <tr>
+            <td><label for="">Ingresa tu direccion</label></td>
+            <td><input type="text" placeholder="Direccion"></td>
+        </tr>
+
+        <tr>
+            <td><label for="">Ingresa tu edad</label></td>
+            <td><input type="number" placeholder="Numero"></td>
+        </tr>
+        <tr>
+            <td><label for="">Ingresa tu nacionalidad</label></td>
+            <td><input type="text" placeholder="Nacionalidad"></td>
+        </tr>
+
+        <tr>
+            <td><b><label for="">Identificacion</label></b><br>
+                <label for="">Run</label><br>
+                <label for="">Pasaporte</label></td>
+            <td><br><input type="radio" value="opcion1" name="selection"><br>
+                <input type="radio" value="opcion2" name="selection"></td>
+        </tr>
+
+        <tr>
+            <td><label for="">Numero de Identificacion</label></td>
+            <td><input type="number" placeholder="Numero sin digito verificador"></td>
+        </tr>
+
+        <tr>
+            <td><label for="">Ingresa tu color favorito</label></td>
+            <td><input type="color" placeholder="Direccion"></td>
+        </tr>
+
+        <tr>
+            <td><b><label for="">Marca la(s) casillas si estas de acuerdo</label></b><br><br>
+                <label for="">Por la presente declaro que toda la informacion es verdadera</label><br><br>
+                <label for="">Estoy consciente de los terminos planteados</label><br><br>
+                <label for="">Declaro conocer los plazos para realizar la postulacion</label></td>
+            <td><br><br><input type="checkbox"><br><br><br><input type="checkbox"><br><br><br><br><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td><label for="">Aceptar</label></td>
+            <td><input type="checkbox"></td>
+        </tr>
+        
+    </table><br>
+
+    <label for="archivo">Adjuntar archivo de respaldo</label>
+    <input type="file"><br><br>
+
+    <label for="">Marcar la hora de postulacion</label>
+    <input type="time">
+    
+    <br>   
+    <br>
+        <h3><i><label for="">Presione enviar</label></i></h3>
+        <h2><button type="submit" >Enviar</button></h2>
+    
+    </form>
+    </center>
+    
+    
+</body>
+</html>

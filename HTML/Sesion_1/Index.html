@@ -26,6 +26,9 @@
         <p>Fusce aliquet pede non pede. <b>Suspendisse dapibus lorem pellentesque magna. Integer nulla. </b>Donec blandit feugiat ligula. <i>Donec hendrerit, felis et imperdiet euismod, purus ipsum pretium metus, in lacinia nulla nisl eget sapien.
         </i>Donec ut est in lectus consequat consequat. Etiam eget dui. Aliquam erat volutpat. <em>Sed at lorem in nunc porta tristique.</em> Proin nec augue.
         </p>
+        <h4>Uso de la etiqueta em para dar enfasis</h4>
+        <p>Es muy importante que <em>llegues a tiempo</em> a la reunión.</p>
+        <p>Para una mejor experiencia, te recomendamos <em>usar auriculares</em> durante la llamada.</p>
         <hr>
 
         <h3>Uso de los headline</h3>
@@ -55,6 +58,23 @@
         <p><code>{color:green}</code></p>
         <hr>
 
+        <h3>otro ejemplo de uso de la etiqueta <code>&lt;code&gt;</code></h3>
+        <p>Este es un ejemplo de cómo usar la etiqueta <code>&lt;code&gt;</code> para mostrar código en HTML:</p>
+        <pre>
+            <code>
+                &lt;html&gt;
+                    &lt;head&gt;
+                        &lt;title&gt;Título de la página&lt;/title&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        &lt;h1&gt;Hola, mundo!&lt;/h1&gt;
+                    &lt;/body&gt;
+                &lt;/html&gt;
+            </code>
+        </pre>
+
+        <hr>
+
         <h3>Uso de la etiqueta "Br"</h3>
         <h4>Ejemplo:</h4>
         <p>Integer ultrices lobortis eros. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. <br>
@@ -69,6 +89,11 @@
         <cite>Quisque ornare placerat risus. Ut molestie magna at mi. Integer aliquet mauris et nibh. Ut mattis ligula posuere velit. Nunc sagittis.</cite>
         <br>
         </p>
+
+        <!-- como respetar los espacios en blanco en html -->
+        <p>Este es un ejemplo de cómo usar &nbsp; para asegurar que se mantenga un espacio:</p>
+  
+        <p>Este&nbsp;es&nbsp;un&nbsp;ejemplo&nbsp;con&nbsp;espacios&nbsp;no&nbsp;rompibles.</p>
         <hr>
 
         <h3>Uso de links</h3>
@@ -82,15 +107,19 @@
         <hr>  
         <h3>Uso de Imagenes img</h3>
         <h4>Ejemplos</h4>
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
+        <img src="img/nogada.webp" alt="Chile en nogada" width="100px">
+        <!-- El atributo " alt " es para declarar un texto alternativo si no carga -->
+        <img src="img/bandera_chilena.gif" alt="bandera chilena" width="100px">
+        <img src="img/mountain-2.svg" alt="montana" width="100px">
+        <img src="img/mountain-1.svg" alt="montana 1" width="100px">
+        <img src="https://www.radac.com.mx/enchiladas.jpeg" alt="enchiladas" width="100px">
         <hr>
         <hr>
         <h3>Uso de Tablas</h3>
         <h4>Ejemplos</h4>
         <table border="1">
+            <b><thead>Tabla de herramientas tecnologicas</thead></b>
+            <tbody>
             <tr>
                 <td>Numero</td>
                 <td>Nombre</td>
@@ -107,7 +136,8 @@
                 <td>2</td>
                 <td>Ajax</td>
                 <td>Libreria de Javascript para procesamiento asincrono</td>
-                <td><img src="img/ajax.png" alt="" height="100px"></td>
+                <td><a href="https://www.google.com" target="_blank"><img src="img/ajax.png" alt="" height="100px"></a></td>
+                <!-- target="_blank"  Es para abrir en una nueva ventana dentro de la etiqueta "a" -->
             </tr>
             <tr>
                 <td>3</td>
@@ -121,23 +151,30 @@
                 <td>Lenguaje de programacion orientada a objetos</td>
                 <td><img src="img/Java.png" alt="" height="80px"></td>
             </tr>
+        </tbody>
         </table>
         <!-- table>tr>td*4 -->
         <hr>
-        <h4>Uso de Formularios</h4>
-        <h3>Ejemplos:</h3>
+        <h3>Uso de Formularios</h3>
+        <h4>Ejemplos:</h4>
       
         <form action="../index.html" method="get">
+            <!-- action - me dice hacia donde dirijo la respuesta -->
             <label for="">Ingresa tu nombre</label>
             <input type="text" placeholder="Nombre"><br><br>
+            
             <label for="">Ingresa tu apellido</label>
             <input type="text" placeholder="Apellido"><br><br>
-            <label for="">Ingresa tu email</label>
-            <input type="email" placeholder="email@dominio.com"><br><br>
+            
+            <label for="email">Ingresa tu email</label>
+            <input type="email" required value="email@dominio.com"><br><br>
+            
             <label for="">Ingresa tu password</label>
             <input type="password" name="" id="" placeholder="*********"><br><br>
+            
             <label for="">Ingresa tu edad</label>
             <input type="number" placeholder="Numero"><br><br>
+            
             <button type="submit">Guardar</button>
         </form>
         
