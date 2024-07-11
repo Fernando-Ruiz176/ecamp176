@@ -1,0 +1,24 @@
+/* Estilo con link*/
+header{
+    background: rgb(92, 47, 255);
+}
+
+section{
+    background: brown;
+}
+
+h1{
+    color: bisque;
+    font-size: 70px;
+}
+h2{
+    color: blanchedalmond;
+}
+
+img{
+    width: 150px;
+    height: fit-content;
+}
+
+/* agregar dos secciones mas, usar color tipo rgb,rgba,hsl y hexadecimal*/
+
